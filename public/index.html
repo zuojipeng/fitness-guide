@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>健身动作指南</title>
+<meta name="description" content="输入想练的动作，查看动作图解、分解动画和视频教学">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏋️</text></svg>">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="hero">
+  <h1>健身动作指南</h1>
+  <p class="sub">搜动作，看图解、分解动画和视频教学</p>
+  <form id="search" class="search" role="search">
+    <input id="q" type="search" placeholder="例如：深蹲、哑铃卧推、引体向上、squat" autocomplete="off" aria-label="搜索动作">
+    <button type="submit">搜索</button>
+  </form>
+  <div id="hot" class="chips"></div>
+</header>
+
+<main>
+  <p id="status" class="status">正在加载动作库…</p>
+  <div id="results" class="grid"></div>
+</main>
+
+<dialog id="detail" class="detail">
+  <button class="close" aria-label="关闭" onclick="this.closest('dialog').close()">×</button>
+  <div id="detail-body"></div>
+</dialog>
+
+<footer>
+  动作数据与图片来自 <a href="https://github.com/yuhonas/free-exercise-db" target="_blank" rel="noopener">free-exercise-db</a>（公共领域）
+</footer>
+
+<script src="/zh.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
