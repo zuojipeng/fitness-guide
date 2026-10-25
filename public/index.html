@@ -19,6 +19,12 @@
   <div id="hot" class="chips"></div>
 </header>
 
+<section class="bodymap" aria-label="按部位找动作">
+  <h2>按部位找动作</h2>
+  <p class="sub">点一块肌肉，列出主练它的动作</p>
+  <div id="body" class="body"></div>
+</section>
+
 <main>
   <p id="status" class="status">正在加载动作库…</p>
   <div id="results" class="grid"></div>
@@ -30,10 +36,10 @@
 </dialog>
 
 <footer>
-  动作数据与图片来自 <a href="https://github.com/yuhonas/free-exercise-db" target="_blank" rel="noopener">free-exercise-db</a>（公共领域）
+  动作数据与图片来自 <a href="https://github.com/yuhonas/free-exercise-db" target="_blank" rel="noopener">free-exercise-db</a>（公共领域）<br>
+  人体肌肉图来自 <a href="https://github.com/melihcolpan/MuscleMap" target="_blank" rel="noopener">MuscleMap</a>（<a href="https://github.com/melihcolpan/MuscleMap/blob/d53ddf4d480b65979f1008b203e6b6eda0e67e54/LICENSE" target="_blank" rel="noopener">MIT 许可</a>，许可原文也附在 <a href="/body-paths.json">body-paths.json</a> 里）
 </footer>
 
-<script src="/zh.js"></script>
-<script src="/app.js"></script>
+<script type="module" src="/app.js"></script>
 </body>
 </html>

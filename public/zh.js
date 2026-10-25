@@ -1,6 +1,6 @@
 // 中文 → 英文检索词。值为数组时表示同义写法，任一命中即可。
 // 匹配时按关键词长度从长到短替换，所以 "罗马尼亚硬拉" 会优先于 "硬拉"。
-window.ZH_TERMS = {
+export const ZH_TERMS = {
   // 复合动作 / 专有名词
   "罗马尼亚硬拉": [["romanian deadlift"]],
   "直腿硬拉": [["stiff-legged", "stiff legged"]],
@@ -122,7 +122,7 @@ window.ZH_TERMS = {
   "有氧": [["cardio"]],
 };
 
-window.ZH_LABELS = {
+export const ZH_LABELS = {
   muscle: {
     abdominals: "腹肌", abductors: "髋外展肌", adductors: "大腿内收肌", biceps: "肱二头肌",
     calves: "小腿", chest: "胸", forearms: "前臂", glutes: "臀", hamstrings: "腘绳肌",
@@ -142,4 +142,4 @@ window.ZH_LABELS = {
 };
 
 // 首页快捷入口
-window.HOT = ["深蹲", "卧推", "硬拉", "引体向上", "俯卧撑", "平板支撑", "哑铃弯举", "侧平举", "臀桥", "高位下拉", "划船", "弓步蹲"];
+export const HOT = ["深蹲", "卧推", "硬拉", "引体向上", "俯卧撑", "平板支撑", "哑铃弯举", "侧平举", "臀桥", "高位下拉", "划船", "弓步蹲"];
